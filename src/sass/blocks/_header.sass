@@ -1,0 +1,59 @@
+.header
+    padding-top: 64px
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-logo
+        display: flex
+        align-items: center
+        &__title
+            font-family: "LeoHand-Light", sans-serif
+            font-style: normal
+            font-weight: 200
+            font-size: 69px
+            color: #030303
+            margin-left: 26px
+    &-button
+        border: 1px solid #0A4BA3
+        border-radius: 10px
+        padding: 13px 20px
+        background: rgba(0, 0, 0, 0)
+        font-family: "Roboto", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 21px
+        line-height: 25px
+        color: #454545
+
+@media (max-width: 1000px)
+    .header
+        &-logo
+            &__img 
+                width: 100px
+            &__title
+                font-size: 48px
+
+@media (max-width: 768px)
+    .header
+        &-logo
+            &__title
+                color: #454545
+                font-size: 36px
+                line-height: 48px
+        &-button
+            padding: 8px
+
+@media (max-width: 600px)
+    .header
+        padding-top: 15px 
+        &-logo
+            &__img
+                width: 50px
+            &__title
+                font-size: 26px
+                margin-left: 10px
+        &-button
+            font-size: 12px
+            line-height: 14px
+
