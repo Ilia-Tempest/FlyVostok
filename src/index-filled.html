@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru" class="html-content">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная с рейсами</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+   
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header-block">
+          <a href="index-filled.html" class="header-logo">
+            <img src="img/header/logo.png" alt="logo" class="header-logo__img">
+            <h1 class="header-logo__title">Fly Vostok</h1>
+            <!-- /.header-logo__title -->
+          </a>
+          <!-- /.header-logo -->
+          <button class="header-button">
+            Войти в систему
+          </button>
+          <!-- /.header-button -->
+        </div>
+        <!-- /.header-block -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <main class="main">
+      <section class="section section-data">
+        <div class="container">
+          <div class="data">
+            <form placeholder="" action="" class="data-form data-form__reis">
+             <input type="text" required placeholder="Откуда" class="data-input data-input__city">
+             <input type="text" required placeholder="Куда" class="data-input data-input__city data-input__where">
+             <input type='text' maxlength="0" placeholder="Дата вылета" required class='datepicker-here data-input data-input__date data-input__departure' />
+             <input type="text" maxlength="0" placeholder="Обратно" required  class="datepicker-here data-input data-input__date data-input__back">
+             
+             <div class="data-block">
+              <div class="data-part">
+                <span class="data-part__text">Язык</span>
+             
+              <select  required name="" class="data-select">
+                
+                <option  value="RUB"  class="data-select__option data-select__russia">
+                 
+                  Русский</option>
+                <!-- /.data-select__option -->
+                <option value="RUB"  class="data-select__option data-select__russia">
+                  Английский</option>
+                <!-- /.data-select__option -->
+                <option value="RUB"  class="data-select__option data-select__russia">
+                  Узбекский</option>
+                <!-- /.data-select__option -->
+                <option value="RUB"  class="data-select__option data-select__russia">
+                  Таджикский</option>
+                <!-- /.data-select__option -->
+                <option value="RUB"  class="data-select__option data-select__russia">
+                  Китайский</option>
+                <!-- /.data-select__option -->
+              </select>
+            </div>
+            <!-- /.data-part -->
+            <div class="data-part">
+              <span class="data-part__text">Валюта</span>
+              <select required name="" id="" class="data-select">
+                <option value="RUB" class="data-select__option">RUB</option>
+                <!-- /.data-select__option -->
+                <option value="USD" class="data-select__option">USD</option>
+                <!-- /.data-select__option -->
+                <option value="UZS" class="data-select__option">UZS</option>
+                <!-- /.data-select__option -->
+                <option value="TJS" class="data-select__option">TJS</option>
+                <!-- /.data-select__option -->
+                <option value="CNY" class="data-select__option">CNY</option>
+                <!-- /.data-select__option -->
+                
+              </select>
+          
+            </div>
+            <!-- /.data-part -->
+             </div>
+             <!-- /.data-block -->
+             <button class="data-button" type="submit">
+               <span class="data-button__text">Найти билеты</span>
+               <!-- /.data-button__text -->
+               <img src="img/data/fly.svg" alt="fly" class="data-button__img">
+             </button>
+            </form>
+            <!-- /.data-form -->
+
+           <div class="data-mobile">
+             <span class="data-mobile__text">Москва - Бухара - 21.22.2021</span>
+             <a href="index.html" class="data-mobile__a">Изменить</a>
+             <!-- /.data-mobile__a -->
+             <!-- /.data-mobile__text -->
+           </div>
+           <!-- /.data-mobile -->
+          </div>
+          <!-- /.data -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section section-data -->
+<section class="section section-fly">
+    <div class="container">
+        <div class="fly">
+            <div class="fly-block">
+              <div class="fly-content">
+                <div class="fly-top">
+              <div class="fly-avia">
+                  <div class="fly-reis">
+                      <div class="fly-fly">
+                          <img src="img/fly/one.svg" alt="fly" class="fly-fly__img">
+                          <span class="fly-fly__text">
+                            Вылет:
+                          </span>
+                          <!-- /.fly-fly__text -->
+                      </div>
+                      <!-- /.fly-fly -->
+                      <div class="fly-time">
+                          <span class="fly-time__text">Москва<br>
+                            VKO</span>
+                          <!-- /.fly-time__text -->
+                          <div class="fly-time__line"></div>
+                          <!-- /.fly-time__line -->
+                          <span class="fly-time__text">9:35 <br>
+                               21.11.2021</span>
+                          <!-- /.fly-time__text -->
+                      </div>
+                      <!-- /.fly-time -->
+                  </div>
+                  <!-- /.fly-reis -->
+                  <div class="fly-reis">
+                    <div class="fly-fly">
+                        <img src="img/fly/two.svg" alt="fly" class="fly-fly__img">
+                        <span class="fly-fly__text fly-fly__text-end">
+                         Прилёт:
+                        </span>
+                        <!-- /.fly-fly__text -->
+                    </div>
+                    <!-- /.fly-fly -->
+                    <div class="fly-time">
+                        <span class="fly-time__text">Москва<br>
+                          VKO</span>
+                        <!-- /.fly-time__text -->
+                        <div class="fly-time__line"></div>
+                        <!-- /.fly-time__line -->
+                        <span class="fly-time__text">9:35 <br>
+                             21.11.2021</span>
+                        <!-- /.fly-time__text -->
+                    </div>
+                    <!-- /.fly-time -->
+                </div>
+                <!-- /.fly-reis -->
+               
+              </div>
+              <!-- /.fly-avia -->
+              <div class="fly-info">
+                  <span class="fly-info__text">В пути 2.45</span>
+                  <!-- /.fly-info__text -->
+                  <ul class="fly-info__ul">
+                      <li class="fly-info__li">Без багажа</li>
+                      <!-- /.fly-info__li -->
+                      <li class="fly-info__li">Без питания</li>
+                      <!-- /.fly-info__li -->
+                      <li class="fly-info__li">Ручная кладь до 5 кг</li>
+                      <!-- /.fly-info__li -->
+                  </ul>
+                  <!-- /.fly-info__ul -->
+              </div>
+              <!-- /.fly-info -->
+         </div>
+              </div>
+         
+              <div class="fly-price">
+                  <span class="fly-price__text">2 980.75 RUB</span>
+                  <!-- /.fly-price__text -->
+                  <a href="index-ticket.html" class="fly-price__button">Оформить билет</a>
+                  <!-- /.fly-price__button -->
+              </div>
+              <!-- /.fly-price -->
+            </div>
+            <!-- /.fly-block -->
+            <div class="fly-block">
+              <div class="fly-content">
+                <div class="fly-top">
+              <div class="fly-avia">
+                  <div class="fly-reis">
+                      <div class="fly-fly">
+                          <img src="img/fly/one.svg" alt="fly" class="fly-fly__img">
+                          <span class="fly-fly__text">
+                            Вылет:
+                          </span>
+                          <!-- /.fly-fly__text -->
+                      </div>
+                      <!-- /.fly-fly -->
+                      <div class="fly-time">
+                          <span class="fly-time__text">Москва<br>
+                            VKO</span>
+                          <!-- /.fly-time__text -->
+                          <div class="fly-time__line"></div>
+                          <!-- /.fly-time__line -->
+                          <span class="fly-time__text">9:35 <br>
+                               21.11.2021</span>
+                          <!-- /.fly-time__text -->
+                      </div>
+                      <!-- /.fly-time -->
+                  </div>
+                  <!-- /.fly-reis -->
+                  <div class="fly-reis">
+                    <div class="fly-fly">
+                        <img src="img/fly/two.svg" alt="fly" class="fly-fly__img">
+                        <span class="fly-fly__text fly-fly__text-end">
+                         Прилёт:
+                        </span>
+                        <!-- /.fly-fly__text -->
+                    </div>
+                    <!-- /.fly-fly -->
+                    <div class="fly-time">
+                        <span class="fly-time__text">Москва<br>
+                          VKO</span>
+                        <!-- /.fly-time__text -->
+                        <div class="fly-time__line"></div>
+                        <!-- /.fly-time__line -->
+                        <span class="fly-time__text">9:35 <br>
+                             21.11.2021</span>
+                        <!-- /.fly-time__text -->
+                    </div>
+                    <!-- /.fly-time -->
+                </div>
+                <!-- /.fly-reis -->
+               
+              </div>
+              <!-- /.fly-avia -->
+              <div class="fly-info">
+                  <span class="fly-info__text">В пути 2.45</span>
+                  <!-- /.fly-info__text -->
+                  <ul class="fly-info__ul">
+                      <li class="fly-info__li">Без багажа</li>
+                      <!-- /.fly-info__li -->
+                      <li class="fly-info__li">Без питания</li>
+                      <!-- /.fly-info__li -->
+                      <li class="fly-info__li">Ручная кладь до 5 кг</li>
+                      <!-- /.fly-info__li -->
+                  </ul>
+                  <!-- /.fly-info__ul -->
+              </div>
+              <!-- /.fly-info -->
+         </div>
+        </div>
+           
+                <div class="fly-price">
+                    <span class="fly-price__text">2 980.75 RUB</span>
+                    <!-- /.fly-price__text -->
+                    <a href="index-ticket.html" class="fly-price__button">Оформить билет</a>
+                    <!-- /.fly-price__button -->
+                </div>
+                <!-- /.fly-price -->
+              </div>
+              <!-- /.fly-block -->
+
+
+
+
+
+              <div class="fly-block">
+                <div class="fly-content">
+                  <div class="fly-top">
+                <div class="fly-avia">
+                    <div class="fly-reis">
+                        <div class="fly-fly">
+                            <img src="img/fly/one.svg" alt="fly" class="fly-fly__img">
+                            <span class="fly-fly__text">
+                              Вылет:
+                            </span>
+                            <!-- /.fly-fly__text -->
+                        </div>
+                        <!-- /.fly-fly -->
+                        <div class="fly-time">
+                            <span class="fly-time__text">Москва<br>
+                              VKO</span>
+                            <!-- /.fly-time__text -->
+                            <div class="fly-time__line"></div>
+                            <!-- /.fly-time__line -->
+                            <span class="fly-time__text">9:35 <br>
+                                 21.11.2021</span>
+                            <!-- /.fly-time__text -->
+                        </div>
+                        <!-- /.fly-time -->
+                    </div>
+                    <!-- /.fly-reis -->
+                    <div class="fly-reis">
+                      <div class="fly-fly">
+                          <img src="img/fly/two.svg" alt="fly" class="fly-fly__img">
+                          <span class="fly-fly__text fly-fly__text-end">
+                           Прилёт:
+                          </span>
+                          <!-- /.fly-fly__text -->
+                      </div>
+                      <!-- /.fly-fly -->
+                      <div class="fly-time">
+                          <span class="fly-time__text">Москва<br>
+                            VKO</span>
+                          <!-- /.fly-time__text -->
+                          <div class="fly-time__line"></div>
+                          <!-- /.fly-time__line -->
+                          <span class="fly-time__text">9:35 <br>
+                               21.11.2021</span>
+                          <!-- /.fly-time__text -->
+                      </div>
+                      <!-- /.fly-time -->
+                  </div>
+                  <!-- /.fly-reis -->
+                 
+                </div>
+                <!-- /.fly-avia -->
+                <div class="fly-info">
+                    <span class="fly-info__text">В пути 2.45</span>
+                    <!-- /.fly-info__text -->
+                    <ul class="fly-info__ul">
+                        <li class="fly-info__li">Без багажа</li>
+                        <!-- /.fly-info__li -->
+                        <li class="fly-info__li">Без питания</li>
+                        <!-- /.fly-info__li -->
+                        <li class="fly-info__li">Ручная кладь до 5 кг</li>
+                        <!-- /.fly-info__li -->
+                    </ul>
+                    <!-- /.fly-info__ul -->
+                </div>
+                <!-- /.fly-info -->
+           </div>
+
+           <div class="fly-top fly-top__two">
+            <div class="fly-avia">
+                <div class="fly-reis">
+                    <div class="fly-fly">
+                        <img src="img/fly/one.svg" alt="fly" class="fly-fly__img">
+                        <span class="fly-fly__text">
+                          Вылет:
+                        </span>
+                        <!-- /.fly-fly__text -->
+                    </div>
+                    <!-- /.fly-fly -->
+                    <div class="fly-time">
+                        <span class="fly-time__text">Москва<br>
+                          VKO</span>
+                        <!-- /.fly-time__text -->
+                        <div class="fly-time__line"></div>
+                        <!-- /.fly-time__line -->
+                        <span class="fly-time__text">9:35 <br>
+                             21.11.2021</span>
+                        <!-- /.fly-time__text -->
+                    </div>
+                    <!-- /.fly-time -->
+                </div>
+                <!-- /.fly-reis -->
+                <div class="fly-reis">
+                  <div class="fly-fly">
+                      <img src="img/fly/two.svg" alt="fly" class="fly-fly__img">
+                      <span class="fly-fly__text fly-fly__text-end">
+                       Прилёт:
+                      </span>
+                      <!-- /.fly-fly__text -->
+                  </div>
+                  <!-- /.fly-fly -->
+                  <div class="fly-time">
+                      <span class="fly-time__text">Москва<br>
+                        VKO</span>
+                      <!-- /.fly-time__text -->
+                      <div class="fly-time__line"></div>
+                      <!-- /.fly-time__line -->
+                      <span class="fly-time__text">9:35 <br>
+                           21.11.2021</span>
+                      <!-- /.fly-time__text -->
+                  </div>
+                  <!-- /.fly-time -->
+              </div>
+              <!-- /.fly-reis -->
+             
+            </div>
+            <!-- /.fly-avia -->
+            <div class="fly-info">
+                <span class="fly-info__text">В пути 2.45</span>
+                <!-- /.fly-info__text -->
+                <ul class="fly-info__ul">
+                    <li class="fly-info__li">Без багажа</li>
+                    <!-- /.fly-info__li -->
+                    <li class="fly-info__li">Без питания</li>
+                    <!-- /.fly-info__li -->
+                    <li class="fly-info__li">Ручная кладь до 5 кг</li>
+                    <!-- /.fly-info__li -->
+                </ul>
+                <!-- /.fly-info__ul -->
+            </div>
+            <!-- /.fly-info -->
+       </div>
+
+
+                </div>
+           
+                <div class="fly-price fly-price__two">
+                    <span class="fly-price__text">2 980.75 RUB</span>
+                    <!-- /.fly-price__text -->
+                    <a href="index-ticket.html" class="fly-price__button">Оформить билет</a>
+                    <!-- /.fly-price__button -->
+                </div>
+                <!-- /.fly-price -->
+              </div>
+              <!-- /.fly-block -->
+
+
+              <div class="fly-block">
+                <div class="fly-content">
+                  <div class="fly-top">
+                <div class="fly-avia">
+                    <div class="fly-reis">
+                        <div class="fly-fly">
+                            <img src="img/fly/one.svg" alt="fly" class="fly-fly__img">
+                            <span class="fly-fly__text">
+                              Вылет:
+                            </span>
+                            <!-- /.fly-fly__text -->
+                        </div>
+                        <!-- /.fly-fly -->
+                        <div class="fly-time">
+                            <span class="fly-time__text">Москва<br>
+                              VKO</span>
+                            <!-- /.fly-time__text -->
+                            <div class="fly-time__line"></div>
+                            <!-- /.fly-time__line -->
+                            <span class="fly-time__text">9:35 <br>
+                                 21.11.2021</span>
+                            <!-- /.fly-time__text -->
+                        </div>
+                        <!-- /.fly-time -->
+                    </div>
+                    <!-- /.fly-reis -->
+                    <div class="fly-reis">
+                      <div class="fly-fly">
+                          <img src="img/fly/two.svg" alt="fly" class="fly-fly__img">
+                          <span class="fly-fly__text fly-fly__text-end">
+                           Прилёт:
+                          </span>
+                          <!-- /.fly-fly__text -->
+                      </div>
+                      <!-- /.fly-fly -->
+                      <div class="fly-time">
+                          <span class="fly-time__text">Москва<br>
+                            VKO</span>
+                          <!-- /.fly-time__text -->
+                          <div class="fly-time__line"></div>
+                          <!-- /.fly-time__line -->
+                          <span class="fly-time__text">9:35 <br>
+                               21.11.2021</span>
+                          <!-- /.fly-time__text -->
+                      </div>
+                      <!-- /.fly-time -->
+                  </div>
+                  <!-- /.fly-reis -->
+                 
+                </div>
+                <!-- /.fly-avia -->
+                <div class="fly-info">
+                    <span class="fly-info__text">В пути 2.45</span>
+                    <!-- /.fly-info__text -->
+                    <ul class="fly-info__ul">
+                        <li class="fly-info__li">Без багажа</li>
+                        <!-- /.fly-info__li -->
+                        <li class="fly-info__li">Без питания</li>
+                        <!-- /.fly-info__li -->
+                        <li class="fly-info__li">Ручная кладь до 5 кг</li>
+                        <!-- /.fly-info__li -->
+                    </ul>
+                    <!-- /.fly-info__ul -->
+                </div>
+                <!-- /.fly-info -->
+           </div>
+          </div>
+             
+                  <div class="fly-price">
+                      <span class="fly-price__text">2 980.75 RUB</span>
+                      <!-- /.fly-price__text -->
+                      <a href="index-ticket.html" class="fly-price__button">Оформить билет</a>
+                      <!-- /.fly-price__button -->
+                  </div>
+                  <!-- /.fly-price -->
+                </div>
+                <!-- /.fly-block -->
+        </div>
+        <!-- /.fly -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /.section section-fly -->
+
+
+    </main>
+    <!-- /.main -->
+
+
+
+    <div class="modal" id="modal1">
+      <div class="dialog">
+        <img src="img/modal/close.svg" alt="close" class="modal-close">
+       <h2 class="modal-title">
+        Извините, рейс не найден
+       </h2>
+       <!-- /.modal-title -->
+      </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script src="js/datepicker.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>

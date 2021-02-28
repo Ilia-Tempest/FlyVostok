@@ -1,6 +1,8 @@
 .section-data
     margin-top: 125px
 .data
+    &-mobile
+        display: none
     &-input
         padding-left: 0
         padding-right: 0
@@ -133,6 +135,30 @@
         &-form
             align-items: center
             flex-direction: column
+            &__reis
+                display: none
+        &-mobile
+            display: flex
+            align-items: center
+            justify-content: space-between
+            background: #FFFFFF
+            box-shadow: 1px 1px 6px rgba(10, 75, 163, 0.3)
+            border-radius: 10px
+            padding: 10px 7px
+            &__text
+                font-family: "Roboto", sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 16px
+                color: #454545
+            &__a
+                font-family: "Roboto", sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 16px
+                color: #0A4BA3
         &-block
             display: flex
             align-items: center
@@ -180,6 +206,10 @@
             width: 95px
             background-position: 90%
             background-image: url(../img/data/cursor-mobile.svg) 
+            font-size: 10px
+            line-height: 12px
+            padding: 5px 8px
+            font-weight: 500
         &-part
             &__text
                 font-size: 13px
@@ -193,7 +223,18 @@
                 margin-right: 6px
                 font-size: 14px
                 line-height: 16px
-        
+
+@media (max-width: 340px)
+    .data
+        &-part
+            &:last-child
+                margin-top: 10px
+        &-block
+            flex-direction: column
+            align-items: flex-end
+            width: auto
+
+
 
               
                    
