@@ -1,0 +1,403 @@
+.section-fly
+    margin-top: 55px
+    margin-bottom: 60px
+.fly
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-infos
+        display: flex
+        align-items: center
+        margin-left: 55px
+    &-button
+        &__reis
+            display: none
+    &-col
+        display: flex
+        align-items: center
+        &__number
+            border: 0
+            font-family: "Roboto", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 27px
+            color: #000000
+            width: 50px
+            text-decoration: none
+            outline: none
+            text-align: center
+        &__btn
+            outline: none
+            cursor: pointer
+        &__input
+            background: #FFFFFF
+            border-radius: 8px
+            padding: 8px
+            display: flex
+            align-items: center
+        &__text
+            font-family: "Roboto", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 27px
+            color: #000000
+            margin-right: 19px
+    &-content
+        display: flex
+        flex-direction: column
+        padding-left: 50px
+    &-top
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: center
+        &__two
+            margin-top: 28px
+    &-bottom
+        display: flex
+        align-items: center
+        margin-top: 14px
+        justify-content: center
+    &-block
+        background: rgba(189, 206, 222, 0.75)
+        border: 0.5px solid #0A4BA3
+        box-sizing: border-box
+        border-radius: 21px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        flex-wrap: wrap
+        margin-top: 22px
+        &:first-child
+            margin-top: 0px
+    &-line
+        background: rgba(10, 75, 163, 0.2)
+        width: 8px
+        height: 200px
+    &-avia
+        display: flex
+        flex-direction: column
+        align-items: center
+    &-reis
+        display: flex
+        align-items: center
+        margin-top: 10px
+        &:first-child
+            margin-top: 0px
+        &:last-child
+            align-self: flex-start
+
+        &__end
+            display: flex
+            align-items: center
+            margin-top: 14px
+    &-fly
+        display: flex
+        align-items: center
+        &__img
+            width: 24px
+        &__text
+            font-family: "Roboto", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 26px
+            color: #000000
+            margin-left: 25px
+            &-end
+                margin-left: 15px
+    &-time
+        background: #FFFFFF
+        border-radius: 12px
+        padding: 12px 14px 
+        margin-left: 40px
+        display: flex
+        align-items: center
+        &__part
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+        &__reis
+            background: #FFFFFF
+            border-radius: 12px
+            padding-top: 8px
+            padding-bottom: 8px
+            padding-left: 19px
+            padding-right: 80px
+            margin-left: 41px
+        &__line
+            height: 32px
+            width: 2px
+            background: black
+            margin-left: 15px
+            margin-right: 15px
+        &__text
+            font-family: "Roboto", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 26px
+    &-right
+        margin-right: 40px
+        margin-left: 30px
+    &-info
+        display: flex
+        align-items: center
+        margin-bottom: 40px
+        margin-top: 15%
+        &__text
+            font-family: "Roboto", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 26px
+            text-align: center
+            color: #000000
+            margin-right: 30px
+        &__ul
+            margin: 0
+        &__li
+            font-family: "Roboto", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 158.7%
+            color: #000000
+    &-price
+        display: flex
+        flex-direction: column
+        align-items: center
+        height: 200px
+        justify-content: center
+        border-left: 8px solid rgba(10, 75, 163, 0.2)
+        padding-left: 60px
+        padding-right: 50px
+        &__two
+            height: 390px
+        &__reis
+            height: 260px
+        &__text
+            font-family: "Roboto", sans-serif
+            font-size: 24px
+            line-height: 158.7%
+            color: #000000
+            margin-bottom: 12px
+        &__button
+            padding: 9px 28px
+            background: #0A4BA3
+            border-radius: 10px
+            font-family: "Roboto", sans-serif
+            font-size: 18px
+            line-height: 158.7%
+            color: #FFFFFF
+    &-text
+        &__reis
+            margin-bottom: 0px
+
+@media (max-width: 1652px)
+    .fly
+        &-top
+       
+        &-content
+            padding-bottom: 15px
+        &-block
+            padding-top: 15px
+            padding-bottom: 15px
+            padding-left: 0px
+            padding-right: 0px
+            width: 100%
+        &-right
+            margin-right: 50px
+        &-avia
+            margin-left: 50px
+        &-price
+            border-left: 0px
+            width: 100%
+            padding-left: 0px
+            height: auto
+            border-top: 8px solid rgba(10, 75, 163, 0.2)
+            padding-top: 20px
+
+@media (max-width: 1600px)
+    .fly
+        &-content
+            padding-left: 0px
+        &-price
+            padding-right: 0px
+@media (max-width: 1219px)
+    .fly
+        &-block
+            justify-content: center
+        &-time
+            flex-direction: column
+            align-items: flex-start
+            &__reis
+                padding-right: 44px
+            &__part
+                &:last-child
+                    margin-top: 5px
+            &__line
+                display: none
+        &-avia
+            margin-left: 10px
+        &-info
+           
+            &__text
+                margin-right: 0px
+        &-reis
+            &__end
+                align-self: flex-end
+                margin-right: 0px
+@media (max-width: 1000px)
+    .fly
+        &-col
+            &__text
+                font-size: 20px
+@media (max-width: 929px)
+    .fly
+        &-avia
+            margin-bottom: 15px
+        &-bottom
+            flex-direction: column
+            align-items: center
+        &-col
+            margin-top: 15px
+        &-info
+            margin-top: 0px
+            margin-bottom: 0px
+
+@media (max-width: 600px)
+    .section-fly
+        margin-top: 25px
+        margin-bottom: 20px
+    .fly
+        &-infos
+            margin-left: 14px
+        &-reis
+            &__end
+                margin-top: 20px
+        &-right
+            margin-left: 14px
+            margin-right: 0px
+        &-top
+            &__two
+                margin-top: 16px
+        &-bottom
+            flex-direction: row
+        &-col
+            margin-top: 28px
+            &__text
+                font-family: "Roboto", sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 10px
+                line-height: 104.7%
+                color: #000000
+                width: 65px
+                margin-right: 8px
+            &__input
+                padding: 5px
+                padding-top: 0px
+                padding-bottom: 0px
+            &__number
+                width: 20px
+                font-weight: 500
+                font-size: 12px
+                line-height: 158.7%
+            &__btn
+                width: 9px
+        &-block
+            padding-top: 10px
+            padding-bottom: 10px
+            background: rgba(189, 206, 222, 0.75)
+            border: 0.1px solid #0A4BA3
+            box-sizing: border-box
+            border-radius: 12px
+            margin-top: 13px
+        &-avia
+            margin-left: 0px
+            margin-bottom: 0px
+            padding-bottom: 0px
+            align-items: center
+        &-time
+            padding: 3px 5px
+            margin-left: 5px
+            border-radius: 6px
+            &__city
+                margin-right: 3px
+            &__part
+                flex-direction: row
+                align-items: center
+                &:last-child
+                    margin-top: 1px
+            &__date
+                display: none
+            &__reis
+                padding-right: 25px
+                padding-left: 5px
+                padding-top: 1px
+                padding-bottom: 3px
+                margin-left: 5px
+                border-radius: 4px
+            &__text
+                font-size: 10px
+                line-height: 12px
+        &-info
+            margin-left: 0px
+            margin-bottom: 0px
+            margin-right: 0px
+            margin-top: 10%
+            &__text
+                font-size: 10px
+                line-height: 12px
+            &__li
+                font-size: 10px
+            &__ul
+                padding-left: 25px  
+        &-fly
+            &__img
+                width: 13px
+                height: 13px
+            &__text
+                margin-left: 8px
+                font-size: 10px
+                line-height: 12px
+        &-price
+            border-top: 4px solid rgba(10, 75, 163, 0.2)
+            padding-top: 10px
+            flex-direction: row
+            &__text
+                font-weight: bold
+                font-size: 14px
+                line-height: 158.7%
+                margin-bottom: 0px
+                margin-right: 15px
+            &__button
+                padding: 6px
+                font-size: 11px
+                line-height: 158.7%
+    
+@media  (max-width: 363px)
+    .fly
+        &-reis
+            &__end
+                margin-top: 10px
+        &-top
+            flex-direction: column
+        &-col
+            margin-top: 15px
+        &-info
+            margin-bottom: 10px
+        &-infos
+            margin-top: 10px
+            margin-left: 0px
+@media (max-width: 340px)
+    .fly
+        &-bottom
+            flex-direction: column
+        &-col
+            margin-top: 10px
+    

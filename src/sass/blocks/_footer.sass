@@ -1,0 +1,55 @@
+.footer
+    padding-top: 17px
+    padding-bottom: 17px
+    background: rgba(53, 75, 95, 0.61)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-content
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &-mobile
+        font-family: "Roboto", sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 22px
+        line-height: 26px
+        color: #FFFFFF
+    &-title
+        font-family: "Roboto", sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 23px
+        color: #FFFFFF
+    &-text
+        font-family: "Roboto", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        &__first
+            margin-top: 7px
+            margin-bottom: 7px
+
+@media (max-width: 600px)
+    .footer
+        padding-top: 14px
+        padding-bottom: 14px
+        &-text
+            font-size: 8px
+            line-height: 9px
+            &__first
+                margin-top: 2px
+                margin-bottom: 2px
+        &-title
+            font-size: 11px
+            line-height: 13px
+        &-mobile
+            font-size: 11px
+            line-height: 13px
+

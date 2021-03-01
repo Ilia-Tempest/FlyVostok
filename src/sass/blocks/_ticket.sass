@@ -2,7 +2,7 @@
     &__ticket
         margin-top: 55px
 .section-ticket
-    padding-bottom: 50px
+    margin-bottom: 50px
 .ticket
     &-button
         outline: 0
@@ -30,7 +30,16 @@
         display: flex
         align-items: center
         justify-content: space-between
+        flex-direction: column
         flex-wrap: wrap
+        &__block
+            display: flex
+            justify-content: space-between
+            align-items: center
+            flex-wrap: wrap
+            width: 100%
+            &:not(:first-child)
+                margin-top: 50px
     &-block
         display: flex
         flex-direction: column
@@ -146,6 +155,8 @@
            
     
 @media (max-width: 600px)
+    .section-ticket
+        margin-bottom: 20px
     .section-data
         margin-top: 15px
     .section
@@ -170,6 +181,8 @@
             line-height: 11px
             &__date
                 font-size: 10px
+                padding-top: 5px
+                padding-bottom: 5px
                 background-image: url(../img/data/date-mobile.svg)
         &-label
             font-size: 10px
@@ -190,17 +203,32 @@
             &__end
                 margin-top: 10px
 
-@media (max-width: 380px)
+@media (max-width: 440px)
     .ticket
+        &-block
+            width: 292px
         &-date
-            width: 90%
+            width: 100%
         &-part
-            width: 90%
+            width: 100%
         &-input
             width: 200px
 
+@media (max-width: 363px)
+    .ticket
+        &-block
+            width: 100%
+        &-label
+            &__year
+                width: 47px
+@media (max-width: 340px)
+    .ticket
+        &-input
+            width: 180px
 @media (max-width: 330px)
     .ticket
+        &-input
+            width: 170px
         &-date
             width: 100%
         &-part

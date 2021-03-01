@@ -1,0 +1,26 @@
+/*Шрифт Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Шрифт LeoHand*/
+@font-face {
+    font-family: 'LeoHand';
+    src: url('../fonts/LeoHand/LeoHand.eot');
+    src: local('LeoHand'),
+        url('../fonts/LeoHand/LeoHand.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LeoHand/LeoHand.woff2') format('woff2'),
+        url('../fonts/LeoHand/LeoHand.woff') format('woff'),
+        url('../fonts/LeoHand/LeoHand.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+/*Шрифт LeoHand-Light*/
+@font-face {
+    font-family: 'LeoHand-Light';
+    src: url('../fonts/LeoHand/Light/LeoHand-Light.eot');
+    src: local('LeoHand-Light'),
+        url('../fonts/LeoHand/Light/LeoHand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LeoHand/Light/LeoHand-Light.woff2') format('woff2'),
+        url('../fonts/LeoHand/Light/LeoHand-Light.woff') format('woff'),
+        url('../fonts/LeoHand/Light/LeoHand-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

@@ -17,6 +17,7 @@ $(function(){
  });
  $(".modal-close").click( function(){
     $(".modal").removeClass("is-open");
+	$(document.body).removeClass('is-open-modal');
   });
 	$(document).on('click', function(e){
 		if (!(

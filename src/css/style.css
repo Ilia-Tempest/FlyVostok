@@ -390,7 +390,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1, h2, h3 {
   margin: 0;
 }
 
@@ -1565,7 +1565,7 @@ button {
 /*Стили для блока fly*/
 .section-fly {
   margin-top: 55px;
-  padding-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .fly {
@@ -1579,6 +1579,16 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.fly-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 55px;
 }
 
 .fly-button__reis {
@@ -1661,7 +1671,7 @@ button {
 }
 
 .fly-top__two {
-  margin-top: 25px;
+  margin-top: 28px;
 }
 
 .fly-bottom {
@@ -1671,7 +1681,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
+  margin-top: 14px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1743,6 +1753,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 14px;
 }
 
 .fly-fly {
@@ -1781,6 +1792,19 @@ button {
           align-items: center;
 }
 
+.fly-time__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .fly-time__reis {
   background: #FFFFFF;
   border-radius: 12px;
@@ -1807,6 +1831,11 @@ button {
   line-height: 26px;
 }
 
+.fly-right {
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
 .fly-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1814,8 +1843,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 40px;
-  margin-left: 30px;
+  margin-bottom: 40px;
+  margin-top: 9%;
 }
 
 .fly-info__text {
@@ -1893,12 +1922,6 @@ button {
 }
 
 @media (max-width: 1652px) {
-  .fly-top__two {
-    margin-top: 0px;
-  }
-  .fly-bottom {
-    margin-top: 0px;
-  }
   .fly-content {
     padding-bottom: 15px;
   }
@@ -1909,11 +1932,10 @@ button {
     padding-right: 0px;
     width: 100%;
   }
-  .fly-info {
+  .fly-right {
     margin-right: 50px;
   }
   .fly-avia {
-    padding-bottom: 20px;
     margin-left: 50px;
   }
   .fly-price {
@@ -1935,7 +1957,7 @@ button {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1219px) {
   .fly-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1950,7 +1972,10 @@ button {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .fly-time__text:last-child {
+  .fly-time__reis {
+    padding-right: 44px;
+  }
+  .fly-time__part:last-child {
     margin-top: 5px;
   }
   .fly-time__line {
@@ -1959,11 +1984,12 @@ button {
   .fly-avia {
     margin-left: 10px;
   }
-  .fly-info {
-    margin-right: 10px;
-    margin-left: 20px;
-  }
   .fly-info__text {
+    margin-right: 0px;
+  }
+  .fly-reis__end {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     margin-right: 0px;
   }
 }
@@ -1974,7 +2000,10 @@ button {
   }
 }
 
-@media (max-width: 922px) {
+@media (max-width: 929px) {
+  .fly-avia {
+    margin-bottom: 15px;
+  }
   .fly-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1985,16 +2014,31 @@ button {
             align-items: center;
   }
   .fly-col {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .fly-info {
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
 @media (max-width: 600px) {
   .section-fly {
     margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .fly-infos {
+    margin-left: 14px;
+  }
+  .fly-reis__end {
+    margin-top: 20px;
+  }
+  .fly-right {
+    margin-left: 14px;
+    margin-right: 0px;
+  }
+  .fly-top__two {
+    margin-top: 16px;
   }
   .fly-bottom {
     -webkit-box-orient: horizontal;
@@ -2003,7 +2047,7 @@ button {
             flex-direction: row;
   }
   .fly-col {
-    margin-top: 0px;
+    margin-top: 28px;
   }
   .fly-col__text {
     font-family: "Roboto", sans-serif;
@@ -2017,6 +2061,8 @@ button {
   }
   .fly-col__input {
     padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .fly-col__number {
     width: 20px;
@@ -2035,22 +2081,38 @@ button {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 12px;
+    margin-top: 13px;
   }
   .fly-avia {
     margin-left: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding-bottom: 0px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-  }
-  .fly-info {
-    margin-left: 0px;
-    margin-right: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .fly-time {
-    padding: 5px;
+    padding: 3px 5px;
     margin-left: 5px;
+    border-radius: 6px;
+  }
+  .fly-time__city {
+    margin-right: 3px;
+  }
+  .fly-time__part {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fly-time__part:last-child {
+    margin-top: 1px;
+  }
+  .fly-time__date {
+    display: none;
   }
   .fly-time__reis {
     padding-right: 25px;
@@ -2058,14 +2120,17 @@ button {
     padding-top: 1px;
     padding-bottom: 3px;
     margin-left: 5px;
+    border-radius: 4px;
   }
   .fly-time__text {
     font-size: 10px;
     line-height: 12px;
   }
   .fly-info {
-    margin-left: 15px;
+    margin-left: 0px;
     margin-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 10%;
   }
   .fly-info__text {
     font-size: 10px;
@@ -2079,7 +2144,7 @@ button {
   }
   .fly-fly__img {
     width: 13px;
-    height: 9,09px;
+    height: 13px;
   }
   .fly-fly__text {
     margin-left: 8px;
@@ -2109,8 +2174,24 @@ button {
 }
 
 @media (max-width: 363px) {
+  .fly-reis__end {
+    margin-top: 10px;
+  }
+  .fly-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fly-col {
+    margin-top: 15px;
+  }
   .fly-info {
     margin-bottom: 10px;
+  }
+  .fly-infos {
+    margin-left: 0px;
+    margin-top: 10px;
   }
 }
 
@@ -2126,13 +2207,13 @@ button {
   }
 }
 
-/**/
+/*Стили для блока ticket*/
 .section-fly__ticket {
   margin-top: 55px;
 }
 
 .section-ticket {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .ticket-button {
@@ -2172,8 +2253,31 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.ticket-form__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.ticket-form__block:not(:first-child) {
+  margin-top: 50px;
 }
 
 .ticket-block {
@@ -2348,6 +2452,9 @@ button {
 }
 
 @media (max-width: 600px) {
+  .section-ticket {
+    margin-bottom: 20px;
+  }
   .section-data {
     margin-top: 15px;
   }
@@ -2374,6 +2481,8 @@ button {
   }
   .ticket-input__date {
     font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-image: url(../img/data/date-mobile.svg);
   }
   .ticket-label {
@@ -2402,24 +2511,134 @@ button {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 440px) {
+  .ticket-block {
+    width: 292px;
+  }
   .ticket-date {
-    width: 90%;
+    width: 100%;
   }
   .ticket-part {
-    width: 90%;
+    width: 100%;
   }
   .ticket-input {
     width: 200px;
   }
 }
 
+@media (max-width: 363px) {
+  .ticket-block {
+    width: 100%;
+  }
+  .ticket-label__year {
+    width: 47px;
+  }
+}
+
+@media (max-width: 340px) {
+  .ticket-input {
+    width: 180px;
+  }
+}
+
 @media (max-width: 330px) {
+  .ticket-input {
+    width: 170px;
+  }
   .ticket-date {
     width: 100%;
   }
   .ticket-part {
     width: 100%;
+  }
+}
+
+/*Стили для подвала*/
+.footer {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background: rgba(53, 75, 95, 0.61);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-mobile {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.footer-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.footer-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.footer-text__first {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .footer-text {
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .footer-text__first {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .footer-title {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .footer-mobile {
+    font-size: 11px;
+    line-height: 13px;
   }
 }
 
@@ -2443,17 +2662,22 @@ button {
   display: none;
 }
 
-.modal.is-open {
-  display: block;
-}
-
 .dialog {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+}
+
+.modal.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal-title {
@@ -2479,24 +2703,29 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 107px;
-  top: 30%;
+  padding: 107px 50px;
 }
 
 @media (max-width: 600px) {
   .modal-title {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 20px;
   }
   .dialog {
-    top: 15%;
-    padding: 100px 0;
-    width: 100%;
+    padding: 90px 30px;
+    width: auto;
   }
 }
 
 @media (max-width: 360px) {
   .modal-title {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .dialog {
+    padding: 80px 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

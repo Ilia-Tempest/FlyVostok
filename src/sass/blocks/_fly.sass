@@ -1,10 +1,14 @@
 .section-fly
     margin-top: 55px
-    padding-bottom: 50px
+    margin-bottom: 60px
 .fly
     display: flex
     flex-direction: column
     align-items: center
+    &-infos
+        display: flex
+        align-items: center
+        margin-left: 55px
     &-button
         &__reis
             display: none
@@ -50,11 +54,11 @@
         flex-wrap: wrap
         justify-content: center
         &__two
-            margin-top: 25px
+            margin-top: 28px
     &-bottom
         display: flex
         align-items: center
-        margin-top: 15px
+        margin-top: 14px
         justify-content: center
     &-block
         background: rgba(189, 206, 222, 0.75)
@@ -87,6 +91,7 @@
             margin-right: 20px
             display: flex
             align-items: center
+            margin-top: 14px
     &-fly
         display: flex
         align-items: center
@@ -107,6 +112,10 @@
         margin-left: 40px
         display: flex
         align-items: center
+        &__part
+            display: flex
+            flex-direction: column
+            align-items: flex-start
         &__reis
             background: #FFFFFF
             border-radius: 12px
@@ -127,11 +136,14 @@
             font-weight: normal
             font-size: 22px
             line-height: 26px
+    &-right
+        margin-right: 40px
+        margin-left: 30px
     &-info
         display: flex
         align-items: center
-        margin-right: 40px
-        margin-left: 30px
+        margin-bottom: 40px
+        margin-top: 9%
         &__text
             font-family: "Roboto", sans-serif
             font-style: normal
@@ -184,10 +196,7 @@
 @media (max-width: 1652px)
     .fly
         &-top
-            &__two
-                margin-top: 0px
-        &-bottom
-            margin-top: 0px
+       
         &-content
             padding-bottom: 15px
         &-block
@@ -196,10 +205,9 @@
             padding-left: 0px
             padding-right: 0px
             width: 100%
-        &-info
+        &-right
             margin-right: 50px
         &-avia
-            padding-bottom: 20px
             margin-left: 50px
         &-price
             border-left: 0px
@@ -215,14 +223,16 @@
             padding-left: 0px
         &-price
             padding-right: 0px
-@media (max-width: 1200px)
+@media (max-width: 1219px)
     .fly
         &-block
             justify-content: center
         &-time
             flex-direction: column
             align-items: flex-start
-            &__text
+            &__reis
+                padding-right: 44px
+            &__part
                 &:last-child
                     margin-top: 5px
             &__line
@@ -230,33 +240,51 @@
         &-avia
             margin-left: 10px
         &-info
-            margin-right: 10px
-            margin-left: 20px
+           
             &__text
+                margin-right: 0px
+        &-reis
+            &__end
+                align-self: flex-end
                 margin-right: 0px
 @media (max-width: 1000px)
     .fly
         &-col
             &__text
                 font-size: 20px
-@media (max-width: 922px)
+@media (max-width: 929px)
     .fly
+        &-avia
+            margin-bottom: 15px
         &-bottom
             flex-direction: column
             align-items: center
         &-col
-            margin-top: 10px
+            margin-top: 15px
         &-info
-            margin-bottom: 20px
+            margin-top: 0px
+            margin-bottom: 0px
 
 @media (max-width: 600px)
     .section-fly
         margin-top: 25px
+        margin-bottom: 20px
     .fly
+        &-infos
+            margin-left: 14px
+        &-reis
+            &__end
+                margin-top: 20px
+        &-right
+            margin-left: 14px
+            margin-right: 0px
+        &-top
+            &__two
+                margin-top: 16px
         &-bottom
             flex-direction: row
         &-col
-            margin-top: 0px
+            margin-top: 28px
             &__text
                 font-family: "Roboto", sans-serif
                 font-style: normal
@@ -268,6 +296,8 @@
                 margin-right: 8px
             &__input
                 padding: 5px
+                padding-top: 0px
+                padding-bottom: 0px
             &__number
                 width: 20px
                 font-weight: 500
@@ -282,29 +312,40 @@
             border: 0.1px solid #0A4BA3
             box-sizing: border-box
             border-radius: 12px
+            margin-top: 13px
         &-avia
             margin-left: 0px
-            margin-bottom: 10px
+            margin-bottom: 0px
             padding-bottom: 0px
-            align-items: flex-end
-        &-info
-            margin-left: 0px
-            margin-right: 0px
+            align-items: center
         &-time
-            padding: 5px
+            padding: 3px 5px
             margin-left: 5px
+            border-radius: 6px
+            &__city
+                margin-right: 3px
+            &__part
+                flex-direction: row
+                align-items: center
+                &:last-child
+                    margin-top: 1px
+            &__date
+                display: none
             &__reis
                 padding-right: 25px
                 padding-left: 5px
                 padding-top: 1px
                 padding-bottom: 3px
                 margin-left: 5px
+                border-radius: 4px
             &__text
                 font-size: 10px
                 line-height: 12px
         &-info
-            margin-left: 15px
+            margin-left: 0px
             margin-bottom: 0px
+            margin-right: 0px
+            margin-top: 10%
             &__text
                 font-size: 10px
                 line-height: 12px
@@ -315,7 +356,7 @@
         &-fly
             &__img
                 width: 13px
-                height: 9,09px
+                height: 13px
             &__text
                 margin-left: 8px
                 font-size: 10px
@@ -337,12 +378,23 @@
     
 @media  (max-width: 363px)
     .fly
+        &-reis
+            &__end
+                margin-top: 10px
+        &-top
+            flex-direction: column
+        &-col
+            margin-top: 15px
         &-info
             margin-bottom: 10px
+        &-infos
+            margin-left: 0px
+            margin-top: 10px
 @media (max-width: 340px)
     .fly
         &-bottom
             flex-direction: column
         &-col
             margin-top: 10px
+ 
     
