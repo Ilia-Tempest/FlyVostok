@@ -3,6 +3,20 @@ $('body').on('input', '.data-input__date', function(){
 });
 
 
+
+
+
+var dateToday = new Date();    
+$(function () {
+    $(".date").datepicker({ 
+        minDate: dateToday 
+    });
+    $( ".datepicker-here").datepicker({ dateFormat: "yyyy-mm-dd" });
+});
+   
+
+
+
 $('body').on('focus',".datepicker-here", function(){
     $(this).datepicker();
 });
