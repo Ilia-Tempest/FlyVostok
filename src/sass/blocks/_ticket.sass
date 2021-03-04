@@ -34,12 +34,12 @@
         flex-wrap: wrap
         &__block
             display: flex
-            justify-content: space-between
+            justify-content: space-around
             align-items: center
             flex-wrap: wrap
             width: 100%
             &:not(:first-child)
-                margin-top: 50px
+                margin-top: 40px
     &-block
         display: flex
         flex-direction: column
@@ -49,7 +49,7 @@
         font-family: "Roboto", sans-serif
         font-style: normal
         font-weight: normal
-        font-size: 18px
+        font-size: 16px
         line-height: 26px
         color: #000000
     &-input
@@ -62,7 +62,7 @@
         padding-top: 12px
         padding-bottom: 12px
         font-family: "Roboto", sans-serif
-        font-size: 18px
+        font-size: 16px
         line-height: 21px
         width: 400px
         &__date
@@ -73,21 +73,21 @@
             border-radius: 10px
             padding-top: 10px
             padding-bottom: 10px
-            width: 234px
+            width: auto
             outline: 0
             border: 0
             cursor: pointer
             margin-right: 30px
             text-indent: 10px
             font-family: "Roboto", sans-serif
-            font-size: 18px
+            font-size: 16px
             line-height: 21px
             background-size: 22px
     &-select
         appearance: none
         padding: 10px
         padding-left: 17px
-        padding-right: 70px
+        padding-right: 40px
         background: #FFFFFF
         border-radius: 10px
         border: 0px
@@ -95,66 +95,94 @@
         font-family: "Roboto", sans-serif
         font-style: normal
         font-weight: normal
-        font-size: 18px
+        font-size: 16px
         line-height: 26px
         color: #454545
         background-image: url(../img/ticket/cursor.svg)
         background-repeat: no-repeat
-        background-position: 95%
+        background-position: 90%
         background-size: 14px
     &-option
     &-part
         display: flex
         align-items: center
         margin-top: 20px
-        &:first-child
+        &__first
             margin-top: 0px
+
     &-date
         margin-top: 20px
         display: flex
         align-items: center
+        width: 100%
+        justify-content: flex-end
+        &__part
+            display: flex
+            align-items: center
+        &__parts
+            width: 400px
+            display: flex
+            align-items: center
+            justify-content: space-between
 
-@media (max-width: 1760px)
+@media (max-width: 1700px)
     .ticket
-        &-label
-            margin-right: 24px
+        &-button
+            font-size: 15px
+        &-date
+            &__parts
+                justify-content: flex-end
         &-input
             width: 300px
-            &__date
-                width: auto
-@media (max-width: 1530px)
+
+
+@media (max-width: 1340px)
     .ticket
-       &-button
-           margin-top: 40px
-       &-input
-           width: 70%
-       &-form
-           flex-direction: column
-       &-part
-           width: 80%
-           justify-content: flex-end
+       &-label
+           margin-right: 20px
+           font-size: 15px
+       &-date
+           width: auto
+           &__parts
+               width: auto
        &-block
-           width: 100%
-           align-items: center
-           &__end
-               margin-top: 20px
+           
+       &-form
+           &__block
+            
+       &-block
+           width: auto
+       &-part
+           width: auto
+           
+       &-input
+           width: auto 
+
+@media (max-width: 1100px)
+    .ticket
+        &-input
+            width: 340px
+        &-form
+            &__block
+                flex-direction: column
+                align-items: center
 @media (max-width: 1000px)
     .ticket
+        &-button
+            margin-top: 30px
         &-label
-            font-size: 18px
+          
             margin-right: 12px
         &-input
             &__date
-                margin-right: 0px
+                margin-right: 20px
         &-date
+            margin-top: 20px
             display: flex
-            flex-direction: column
-            align-items: flex-end
-            width: 80%
-            &__part
-                &:last-child
-                    margin-top: 20px
-           
+            flex-direction: row
+            align-items: center
+            width: auto
+
     
 @media (max-width: 600px)
     .section-ticket
@@ -166,6 +194,10 @@
             &__ticket
                 margin-top: 25px
     .ticket
+        &-form
+            &__block
+                width: auto
+                align-items: flex-end
         &-button
             padding: 7px 15px
             font-size: 12px
@@ -179,6 +211,7 @@
             background-position: 86%
             background-size: auto
         &-input
+            width: 300px
             text-indent: 8px
             font-size: 9px
             line-height: 11px
@@ -188,38 +221,46 @@
                 padding-bottom: 5px
                 background-image: url(../img/data/date-mobile.svg)
                 background-size: auto
+                margin-right: 10px
+                line-height: normal
         &-label
             font-size: 10px
-            margin-right: 13px
+            margin-right: 7px
             line-height: 158.7%
         &-form
             margin-top: 15px
             padding: 15px
         &-part
             margin-top: 10px
+            &__first
+                margin-top: 0px
         &-date
             margin-top: 10px
             &__part
                 margin-top: 0px
-                &:last-child
-                    margin-top: 10px
+            
         &-block
             &__end
-                margin-top: 10px
-
-@media (max-width: 440px)
+                margin-top: 0px
+@media (max-width: 500px)
     .ticket
-        &-block
-            width: 292px
-        &-date
-            width: 100%
-        &-part
-            width: 100%
         &-input
+            padding-top: 7px
+            padding-bottom: 7px
             width: 200px
+            &__date
+                width: 110px
+        &-select
+            line-height: 21px
 
-@media (max-width: 363px)
+@media (max-width: 360px)
     .ticket
+        &-select
+            line-height: normal
+        &-input
+            width: 140px
+            &__date
+                width: auto
         &-block
             width: 100%
         &-label
@@ -231,10 +272,13 @@
             width: 180px
 @media (max-width: 330px)
     .ticket
+        &-label
+            font-size: 9px
         &-input
-            width: 170px
+            width: 140px
         &-date
             width: 100%
         &-part
             width: 100%
+            justify-content: flex-end
        

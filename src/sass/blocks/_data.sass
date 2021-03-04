@@ -69,7 +69,7 @@
         font-weight: 500
         background-image: url(../img/data/cursor.svg) 
         background-repeat: no-repeat
-        background-position: 95%
+        background-position: 90%
         appearance: none
         outline: 0
     &-part
@@ -107,9 +107,36 @@
         &-button
             margin-left: 0px
 @media (max-width: 1468px)
-    .data-block
-        margin-top: 30px
-
+    .data
+        &-button
+            font-size: 15px
+            margin-left: 20px
+        &-select
+            width: 110px
+            padding-right: 13px
+        &-input
+            width: 170px
+            font-size: 15px
+            padding-bottom: 7px
+            padding-top: 7px
+            &__city
+                background-size: 16px
+            &__date
+                background-size: 20px
+            &[placeholder]
+                font-size: 15px
+@media (max-width: 1199px)
+    .data 
+        &-button
+            margin-top: 20px
+            margin-left: 0px
+        &-block
+            margin-top: 20px
+            flex-direction: row
+            align-items: center
+        &-part
+            &:last-child
+                margin-left: 30px
 @media (max-width: 1000px)
     .section-data
         margin-top: 70px
@@ -218,6 +245,7 @@
                 background-position: 95%
             &__city
                 background-image: url(../img/data/polygon-mobile.svg)
+                background-size: 12px
                 &:first-child
                     border-bottom: 0.5px solid #D1D1D1
                     border-radius: 0

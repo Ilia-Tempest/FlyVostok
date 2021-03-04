@@ -11,15 +11,21 @@ $(function () {
     $(".date").datepicker({ 
         minDate: dateToday 
     });
-    $( ".datepicker-here").datepicker({ dateFormat: "yyyy-mm-dd" });
+    
 });
    
-
-
-
-$('body').on('focus',".datepicker-here", function(){
+$(function() {
+    $('.data-here').datepicker({
+        
+    });
+  
+    
+  });
+  $('body').on('click',".data-here", function(){
     $(this).datepicker();
 });
+
+
 // Убавляем кол-во по клику
     $('.quantity_inner .bt_minus').click(function() {
     let $input = $(this).parent().find('.quantity');

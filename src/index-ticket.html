@@ -145,7 +145,7 @@
                     <div class="fly-reis">
                       <div class="fly-fly">
                           <img src="img/fly/two.svg" alt="fly" class="fly-fly__img">
-                          <span class="fly-fly__text fly-fly__text-end">
+                          <span class="fly-fly__text fly-fly__text-end fly-fly__text-two">
                            Прилёт:
                           </span>
                           <!-- /.fly-fly__text -->
@@ -173,7 +173,7 @@
                  
 
                   <div class="fly-reis__end">
-                    <div class="fly-fly">
+                    <div class="fly-fly fly-fly__end">
                         
                         <span class="fly-fly__text fly-fly__texts">
                          Рейс:
@@ -256,7 +256,7 @@
 
      <div class="ticket-form__block">
       <div class="ticket-block">
-        <div class="ticket-part">
+        <div class="ticket-part ticket-part__first">
           <label for="" class="ticket-label">Фамилия:</label>
           <!-- /.ticket-label -->
           <input required placeholder="Фамилия" type="text" class="ticket-input">
@@ -269,10 +269,13 @@
         </div>
         <!-- /.ticket-part -->
      <div class="ticket-date">
+      
+        <label for="" class="ticket-label ticket-date__label">Дата рождения:</label>
+       
+       <div class="ticket-date__parts">
        <div class="ticket-date__part">
-      <label for="" class="ticket-label">Дата рождения:</label>
-      <!-- /.ticket-label -->
-      <input required maxlength="0" placeholder="Дата рождения" type="text" class="datepicker-here ticket-input__date">
+      
+      <input required maxlength="0" placeholder="Дата рождения" type="text" class="data-here ticket-input__date">
     </div>
     <!-- /.ticket-date__part -->
 
@@ -288,7 +291,7 @@
       <!-- /#.ticket-select -->
     </div>
     <!-- /.ticket-date__part -->
-
+  </div>
      </div>
      <!-- /.ticket-date -->
      <div class="ticket-part">
@@ -309,7 +312,7 @@
         <div class="ticket-part">
           <label for="" class="ticket-label ticket-label__year">Срок действия:</label>
           <!-- /.ticket-label -->
-          <input required placeholder="Срок действия" type="text" maxlength="0" class="datepicker-here ticket-input">
+          <input required placeholder="Срок действия" type="text" maxlength="0" class="data-here ticket-input">
         </div>
         <!-- /.ticket-part -->
 
