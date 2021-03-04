@@ -1304,7 +1304,10 @@ button {
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
+  .data-select {
+  width: 100px;
+  }
   .data-button__text {
   font-size: 14px;
   }
