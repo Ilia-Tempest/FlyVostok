@@ -1236,7 +1236,9 @@ button {
   display: flex;
   align-items: center;
 }
-
+.data-part:last-child {
+  margin-top: 7px;
+}
 .data-part__text {
   margin-right: 10px;
   font-family: "Roboto", sans-serif;
@@ -1302,22 +1304,14 @@ button {
   }
 }
 
-@media (max-width: 1199px) {
-  .data-button {
-    margin-top: 20px;
-    margin-left: 0px;
-  }
-  .data-block {
-    margin-top: 20px;
-    flex-direction: row;
-    align-items: center;
-  }
- 
-}
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1300px) {
   .section-data {
     margin-top: 70px;
+  }
+  .data-part:last-child {
+   margin-top: 0px;
   }
   .data-block {
     flex-direction: row;
