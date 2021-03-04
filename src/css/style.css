@@ -1314,14 +1314,15 @@ button {
    margin-top: 0px;
   }
   .data-block {
+    margin-top: 20px;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 60%;
     margin-bottom: 27px;
   }
   .data-input {
     margin-right: 0px;
-    width: 90%;
+    width: 60%;
   }
   .data-input__date {
     background-position: 96%;
@@ -1356,6 +1357,17 @@ button {
     align-items: center;
   }
 }
+
+@media (max-width: 1000px) {
+  
+  .data-block {
+    width: 90%;
+  }
+  .data-input {
+    width: 90%;
+  }
+}
+
 
 @media (max-width: 600px) {
   .section-data {
