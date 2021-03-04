@@ -1303,8 +1303,8 @@ button {
     font-size: 15px;
   }
 }
-
-@media (max-width: 1600px) {
+@admin 
+@media (max-width: 1615px) {
   .data-select {
   width: 100px;
   }
