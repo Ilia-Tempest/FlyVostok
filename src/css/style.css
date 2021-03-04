@@ -2267,8 +2267,8 @@ button {
   background-position: 94%;
   background-color: #FFFFFF;
   border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   width: auto;
   outline: 0;
   border: 0;
@@ -2294,7 +2294,7 @@ button {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 26px;
+  line-height: normal;
   color: #454545;
   background-image: url(../img/ticket/cursor.svg);
   background-repeat: no-repeat;
