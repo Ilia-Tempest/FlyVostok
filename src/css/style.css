@@ -2286,7 +2286,9 @@ button {
   align-items: center;
   margin-top: 20px;
 }
-
+.ticket-part__pass {
+  margin-top: 0px;
+}
 .ticket-part__first {
   margin-top: 0px;
 }
