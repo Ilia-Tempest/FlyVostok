@@ -2355,6 +2355,9 @@ button {
     flex-direction: column;
     align-items: center;
   }
+  .ticket-part__pass {
+  margin-top: 20px;
+}
 }
 
 @media (max-width: 1000px) {
