@@ -1284,11 +1284,11 @@ button {
     margin-left: 20px;
   }
   .data-select {
-    width: 110px;
+    width: 130px;
     padding-right: 13px;
   }
   .data-input {
-    width: 170px;
+    width: 130px;
     font-size: 15px;
     padding-bottom: 7px;
     padding-top: 7px;
@@ -1303,8 +1303,8 @@ button {
     font-size: 15px;
   }
 }
-@admin 
-@media (max-width: 1615px) {
+
+@media (max-width: 1660px) {
   .data-select {
   width: 100px;
   }
