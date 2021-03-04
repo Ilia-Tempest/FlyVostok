@@ -1282,7 +1282,7 @@ button {
     width: 150px;
   }
   .data-input[placeholder] {
-    font-size: 15px;
+    font-size: 13px;
   }
  } 
 @media (max-width: 1700px) {
