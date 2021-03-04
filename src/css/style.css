@@ -1247,9 +1247,7 @@ button {
   color: #383838;
 }
 
-.data-part:last-child {
-  margin-top: 7px;
-}
+
 
 .data-button {
   background: #0A4BA3;
@@ -1314,9 +1312,7 @@ button {
     flex-direction: row;
     align-items: center;
   }
-  .data-part:last-child {
-    margin-left: 30px;
-  }
+ 
 }
 
 @media (max-width: 1000px) {
