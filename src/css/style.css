@@ -1281,6 +1281,9 @@ button {
   .data-input {
     width: 150px;
   }
+  .data-input[placeholder] {
+    font-size: 15px;
+  }
  } 
 @media (max-width: 1700px) {
   .data-button {
