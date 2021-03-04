@@ -1278,7 +1278,7 @@ button {
   }
 }
 
-@media (max-width: 1468px) {
+@media (max-width: 1700px) {
   .data-button {
     font-size: 15px;
     margin-left: 20px;
@@ -1304,7 +1304,14 @@ button {
   }
 }
 
-
+@media (max-width: 1500px) {
+  .data-button__text {
+  font-size: 14px;
+  }
+  .data-input {
+  width: 140px;
+  }
+}
 
 @media (max-width: 1300px) {
   .section-data {
