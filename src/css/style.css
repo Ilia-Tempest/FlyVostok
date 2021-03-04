@@ -1277,7 +1277,11 @@ button {
     margin-left: 0px;
   }
 }
-
+@media (max-width: 1880px) {
+  .data-input {
+    width: 150px;
+  }
+ } 
 @media (max-width: 1700px) {
   .data-button {
     font-size: 15px;
