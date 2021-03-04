@@ -1284,11 +1284,11 @@ button {
     margin-left: 20px;
   }
   .data-select {
-    width: 130px;
+    width: 110px;
     padding-right: 13px;
   }
   .data-input {
-    width: 130px;
+    width: 140px;
     font-size: 15px;
     padding-bottom: 7px;
     padding-top: 7px;
@@ -1311,9 +1311,7 @@ button {
   .data-button__text {
   font-size: 14px;
   }
-  .data-input {
-  width: 140px;
-  }
+ 
 }
 
 @media (max-width: 1300px) {
