@@ -2257,8 +2257,10 @@ button {
   padding-bottom: 12px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 21px;
+  line-height: normal;
   width: 400px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .ticket-input__date {
@@ -2269,21 +2271,25 @@ button {
   border-radius: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
-  width: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 225px;
   outline: 0;
   border: 0;
   cursor: pointer;
-  margin-right: 30px;
+  margin-right: 20px;
   text-indent: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 21px;
+  line-height: normal;
   background-size: 22px;
 }
 
 .ticket-select {
   appearance: none;
   padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 17px;
   padding-right: 40px;
   background: #FFFFFF;
@@ -2331,10 +2337,17 @@ button {
   width: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+.ticket-date__label {
+  width: 130px;
+  margin-right: 31px;
 }
 
 @media (max-width: 1700px) {
+  .ticket-form__block {
+    align-items: flex-start;
+  }
   .ticket-button {
     font-size: 15px;
   }
@@ -2344,14 +2357,38 @@ button {
   .ticket-input {
     width: 300px;
   }
+  .ticket-date__parts {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .ticket-input__date {
+    width: 300px;
+    margin-right: 0px;
+  }
+  .ticket-select {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 300px;
+    text-indent: 10px;
+    background-position: 93%;
+  }
+  .ticket-date__part:last-child {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 1340px) {
+  .ticket-input__date {
+    width: 200px;
+  }
   .ticket-label {
     margin-right: 20px;
     font-size: 15px;
   }
   .ticket-date {
+    width: auto;
+  }
+  .ticket-date__label {
     width: auto;
   }
   .ticket-date__parts {
@@ -2364,11 +2401,20 @@ button {
     width: auto;
   }
   .ticket-input {
-    width: auto;
+    width: 200px;
+  }
+  .ticket-select {
+    width: 200px;
   }
 }
 
 @media (max-width: 1100px) {
+  .ticket-input__date {
+    width: 340px;
+  }
+  .ticket-select {
+    width: 340px;
+  }
   .ticket-input {
     width: 340px;
   }
@@ -2388,9 +2434,7 @@ button {
   .ticket-label {
     margin-right: 12px;
   }
-  .ticket-input__date {
-    margin-right: 20px;
-  }
+
   .ticket-date {
     margin-top: 20px;
     display: flex;
@@ -2422,7 +2466,7 @@ button {
   }
   .ticket-select {
     font-size: 10px;
-    padding: 4px 7px;
+    padding: 5px 7px;
     padding-right: 30px;
     background-image: url(../img/ticket/cursor-mobile.svg);
     background-position: 86%;
@@ -2432,7 +2476,16 @@ button {
     width: 300px;
     text-indent: 8px;
     font-size: 9px;
-    line-height: 11px;
+    line-height: normal;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .ticket-select {
+    width: auto;
+    text-indent: 0px;
+  }
+  .ticket-date__parts {
+    flex-direction: row;
   }
   .ticket-input__date {
     font-size: 10px;
@@ -2442,6 +2495,10 @@ button {
     background-size: auto;
     margin-right: 10px;
     line-height: normal;
+    width: 210px;
+  }
+  .ticket-date__part:last-child{
+    margin-top: 0px;
   }
   .ticket-label {
     font-size: 10px;
@@ -2471,28 +2528,44 @@ button {
 
 @media (max-width: 500px) {
   .ticket-input {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     width: 200px;
   }
   .ticket-input__date {
     width: 110px;
   }
   .ticket-select {
-    line-height: 21px;
+    line-height: normal;
   }
 }
 
 @media (max-width: 360px) {
+  .ticket-select {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 140px;
+    background-position: 93%;
+    text-indent: 10px;
+  }
+  .ticket-date__parts {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .ticket-date__part:last-child {
+    margin-top: 10px;
+  }
+  .ticket-input__date {
+    margin-right: 0px;
+    width: 140px;
+  }
   .ticket-select {
     line-height: normal;
   }
   .ticket-input {
     width: 140px;
   }
-  .ticket-input__date {
-    width: auto;
-  }
+ 
   .ticket-block {
     width: 100%;
   }
@@ -2502,12 +2575,24 @@ button {
 }
 
 @media (max-width: 340px) {
+  .ticket-input__date {
+    width: 180px;
+  }
+  .ticket-select {
+    width: 180px;
+  }
   .ticket-input {
     width: 180px;
   }
 }
 
 @media (max-width: 330px) {
+  .ticket-input__date {
+    width: 140px;
+  }
+  .ticket-select {
+    width: 140px;
+  }
   .ticket-label {
     font-size: 9px;
   }
@@ -2530,7 +2615,19 @@ button {
   background: rgba(53, 75, 95, 0.61);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.footer-anivia {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.footer-anivia__text {
+  font-family: "Roboto", sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   color: #FFFFFF;
+   margin-right: 8px;
+}
 .footer-block {
   display: flex;
   justify-content: space-between;
@@ -2576,6 +2673,16 @@ button {
 }
 
 @media (max-width: 600px) {
+  .footer-anivia {
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+  .footer-anivia__img {
+    width: 50px;
+  }
+  .footer-anivia__text {
+    font-size: 10px;
+  }
   .footer {
     padding-top: 14px;
     padding-bottom: 14px;
