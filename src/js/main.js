@@ -1,3 +1,4 @@
+$(document).ready(function() {
 $('body').on('input', '.data-input__date', function(){
 	this.value = this.value.replace(/[^0-9\.\,]/g, '');
 });
@@ -21,9 +22,14 @@ $(function() {
   
     
   });
-  $('body').on('click',".data-here", function(){
+
+
+
+  
+
+$('html').on('focus',".data-here", function(){
     $(this).datepicker();
-});
+  });
 
 
 // Убавляем кол-во по клику
@@ -71,4 +77,4 @@ var d = document;
 }, false);
 
 
-  
+});

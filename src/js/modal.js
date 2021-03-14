@@ -1,3 +1,4 @@
+$(document).ready(function() {
 $(function(){
 	function showModal(id){
 		$(document.body).addClass('is-open-modal');
@@ -28,5 +29,7 @@ $(function(){
 			hideModals();
 		}
 	});
+
+});
 
 });
