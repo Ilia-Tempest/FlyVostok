@@ -1,7 +1,4 @@
 $(document).ready(function() {
-$('body').on('input', '.data-input__date', function(){
-	this.value = this.value.replace(/[^0-9\.\,]/g, '');
-});
 
 
 
@@ -15,21 +12,15 @@ $(function () {
     
 });
    
-$(function() {
-    $('.data-here').datepicker({
-        
-    });
-  
-    
-  });
 
 
 
-  
-
-$('html').on('focus',".data-here", function(){
+   
+  $('html').on('mousedown',".data-here", function(){
     $(this).datepicker();
   });
+
+
 
 
 // Убавляем кол-во по клику
